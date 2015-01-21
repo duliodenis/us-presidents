@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fXb-22-oe2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="POTUS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Joy-yV-HhU">
+                                <rect key="frame" x="94" y="86" width="225" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Joy-yV-HhU" secondAttribute="height" multiplier="1:1" id="yxB-rc-7aP"/>
+                                </constraints>
+                                <state key="normal" image="01_george_washington">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presidentTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ADn-oX-NVb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcD-Jo-GDM">
+                                <rect key="frame" x="336" y="86" width="225" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JcD-Jo-GDM" secondAttribute="height" multiplier="1:1" id="Ygw-Ae-1za"/>
+                                </constraints>
+                                <state key="normal" image="02_john_adams">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presidentTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="h8k-mY-Csh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBz-fe-7cT">
+                                <rect key="frame" x="94" y="328" width="225" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kBz-fe-7cT" secondAttribute="height" multiplier="1:1" id="2Qa-HO-MeN"/>
+                                </constraints>
+                                <state key="normal" image="03_thomas_jefferson">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presidentTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cCL-3R-jRi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXA-xe-CgP">
+                                <rect key="frame" x="336" y="328" width="225" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iXA-xe-CgP" secondAttribute="height" multiplier="1:1" id="QMy-4U-dfR"/>
+                                </constraints>
+                                <state key="normal" image="04_james_madison">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="presidentTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qMv-VH-23x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="JcD-Jo-GDM" secondAttribute="trailing" constant="23" id="0a8-3Z-181"/>
+                            <constraint firstItem="kBz-fe-7cT" firstAttribute="top" secondItem="Joy-yV-HhU" secondAttribute="bottom" constant="17" id="2NZ-64-MEX"/>
+                            <constraint firstItem="iXA-xe-CgP" firstAttribute="height" secondItem="JcD-Jo-GDM" secondAttribute="height" id="2xV-vD-a7S"/>
+                            <constraint firstItem="iXA-xe-CgP" firstAttribute="width" secondItem="JcD-Jo-GDM" secondAttribute="width" id="5IL-Uo-1Fo"/>
+                            <constraint firstItem="iXA-xe-CgP" firstAttribute="leading" secondItem="kBz-fe-7cT" secondAttribute="trailing" constant="17" id="9AB-7P-B9V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iXA-xe-CgP" secondAttribute="trailing" constant="23" id="9o1-6S-GkD"/>
+                            <constraint firstItem="Joy-yV-HhU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="78" id="BIb-tS-2Ny"/>
+                            <constraint firstItem="iXA-xe-CgP" firstAttribute="top" secondItem="JcD-Jo-GDM" secondAttribute="bottom" constant="17" id="MBn-UM-84v"/>
+                            <constraint firstItem="kBz-fe-7cT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="78" id="XL5-Zj-cSM"/>
+                            <constraint firstItem="Joy-yV-HhU" firstAttribute="width" secondItem="kBz-fe-7cT" secondAttribute="width" id="edG-ht-Ucb"/>
+                            <constraint firstItem="Joy-yV-HhU" firstAttribute="height" secondItem="kBz-fe-7cT" secondAttribute="height" id="h03-H3-7TC"/>
+                            <constraint firstItem="Joy-yV-HhU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="22" id="hKM-by-zM1"/>
+                            <constraint firstItem="JcD-Jo-GDM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="22" id="sWO-0O-vnw"/>
+                            <constraint firstItem="JcD-Jo-GDM" firstAttribute="leading" secondItem="Joy-yV-HhU" secondAttribute="trailing" constant="17" id="yOn-DF-TOt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cR0-dO-a0u"/>
+                    <connections>
+                        <outlet property="potus1" destination="Joy-yV-HhU" id="2eS-dH-aaL"/>
+                        <outlet property="potus2" destination="JcD-Jo-GDM" id="iV6-28-z1J"/>
+                        <outlet property="potus3" destination="kBz-fe-7cT" id="fqy-Hz-xo9"/>
+                        <outlet property="potus4" destination="iXA-xe-CgP" id="CqV-4z-kLC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="429"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ng9-As-MWP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fXb-22-oe2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="18f-3T-qfZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="1dT-bK-UWU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DEQ-US-5Iz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="01_george_washington" width="225" height="225"/>
+        <image name="02_john_adams" width="225" height="225"/>
+        <image name="03_thomas_jefferson" width="225" height="225"/>
+        <image name="04_james_madison" width="225" height="225"/>
+    </resources>
+</document>
