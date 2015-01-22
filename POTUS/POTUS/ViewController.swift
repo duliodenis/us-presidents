@@ -31,7 +31,8 @@ class ViewController: UIViewController {
         potus3.layer.borderWidth = 1
         potus4.layer.borderWidth = 1
         
-        presidents += ["01_george_washington", "02_john_adams", "03_thomas_jefferson", "04_james_madison", "05_james_monroe"]
+        presidents += ["01_george_washington", "02_john_adams", "03_thomas_jefferson", "04_james_madison", "05_james_monroe", "06_john_quincy_adams", "07_andrew_jackson", "08_martin_van_buren", "09_william_henry_harrison", "10_john_tyler"]
+        
         askQuestion()
     }
 

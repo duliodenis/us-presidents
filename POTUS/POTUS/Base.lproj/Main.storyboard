@@ -30,7 +30,7 @@
                                     <action selector="presidentTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ADn-oX-NVb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcD-Jo-GDM">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcD-Jo-GDM">
                                 <rect key="frame" x="336" y="86" width="225" height="225"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="JcD-Jo-GDM" secondAttribute="height" multiplier="1:1" id="Ygw-Ae-1za"/>
@@ -42,7 +42,7 @@
                                     <action selector="presidentTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="h8k-mY-Csh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBz-fe-7cT">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBz-fe-7cT">
                                 <rect key="frame" x="94" y="328" width="225" height="225"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="kBz-fe-7cT" secondAttribute="height" multiplier="1:1" id="2Qa-HO-MeN"/>
@@ -54,7 +54,7 @@
                                     <action selector="presidentTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cCL-3R-jRi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXA-xe-CgP">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXA-xe-CgP">
                                 <rect key="frame" x="336" y="328" width="225" height="225"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="iXA-xe-CgP" secondAttribute="height" multiplier="1:1" id="QMy-4U-dfR"/>
@@ -71,18 +71,27 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="JcD-Jo-GDM" secondAttribute="trailing" constant="23" id="0a8-3Z-181"/>
                             <constraint firstItem="kBz-fe-7cT" firstAttribute="top" secondItem="Joy-yV-HhU" secondAttribute="bottom" constant="17" id="2NZ-64-MEX"/>
+                            <constraint firstItem="Joy-yV-HhU" firstAttribute="height" secondItem="iXA-xe-CgP" secondAttribute="height" id="2hG-yq-8VE"/>
                             <constraint firstItem="iXA-xe-CgP" firstAttribute="height" secondItem="JcD-Jo-GDM" secondAttribute="height" id="2xV-vD-a7S"/>
+                            <constraint firstItem="Joy-yV-HhU" firstAttribute="width" secondItem="iXA-xe-CgP" secondAttribute="width" id="4iF-oP-MJE"/>
                             <constraint firstItem="iXA-xe-CgP" firstAttribute="width" secondItem="JcD-Jo-GDM" secondAttribute="width" id="5IL-Uo-1Fo"/>
                             <constraint firstItem="iXA-xe-CgP" firstAttribute="leading" secondItem="kBz-fe-7cT" secondAttribute="trailing" constant="17" id="9AB-7P-B9V"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iXA-xe-CgP" secondAttribute="trailing" constant="23" id="9o1-6S-GkD"/>
-                            <constraint firstItem="Joy-yV-HhU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="78" id="BIb-tS-2Ny"/>
+                            <constraint firstItem="Joy-yV-HhU" firstAttribute="leading" relation="lessThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="78" id="BIb-tS-2Ny"/>
+                            <constraint firstItem="Joy-yV-HhU" firstAttribute="height" secondItem="kBz-fe-7cT" secondAttribute="height" id="DfF-l6-U0g"/>
+                            <constraint firstItem="Joy-yV-HhU" firstAttribute="width" secondItem="kBz-fe-7cT" secondAttribute="width" id="FVY-om-o23"/>
                             <constraint firstItem="iXA-xe-CgP" firstAttribute="top" secondItem="JcD-Jo-GDM" secondAttribute="bottom" constant="17" id="MBn-UM-84v"/>
-                            <constraint firstItem="kBz-fe-7cT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="78" id="XL5-Zj-cSM"/>
+                            <constraint firstItem="JcD-Jo-GDM" firstAttribute="centerX" secondItem="iXA-xe-CgP" secondAttribute="centerX" id="VWo-OA-0ca"/>
+                            <constraint firstItem="kBz-fe-7cT" firstAttribute="leading" relation="lessThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="78" id="XL5-Zj-cSM"/>
+                            <constraint firstItem="kBz-fe-7cT" firstAttribute="centerX" secondItem="Joy-yV-HhU" secondAttribute="centerX" id="ad3-Kn-GIj"/>
+                            <constraint firstItem="Joy-yV-HhU" firstAttribute="height" secondItem="JcD-Jo-GDM" secondAttribute="height" id="bCj-N9-YM0"/>
                             <constraint firstItem="Joy-yV-HhU" firstAttribute="width" secondItem="kBz-fe-7cT" secondAttribute="width" id="edG-ht-Ucb"/>
                             <constraint firstItem="Joy-yV-HhU" firstAttribute="height" secondItem="kBz-fe-7cT" secondAttribute="height" id="h03-H3-7TC"/>
                             <constraint firstItem="Joy-yV-HhU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="22" id="hKM-by-zM1"/>
+                            <constraint firstItem="JcD-Jo-GDM" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="3:8" id="nYy-Nl-Kyh"/>
                             <constraint firstItem="JcD-Jo-GDM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="22" id="sWO-0O-vnw"/>
                             <constraint firstItem="JcD-Jo-GDM" firstAttribute="leading" secondItem="Joy-yV-HhU" secondAttribute="trailing" constant="17" id="yOn-DF-TOt"/>
+                            <constraint firstItem="Joy-yV-HhU" firstAttribute="width" secondItem="JcD-Jo-GDM" secondAttribute="width" id="znx-hc-Tb6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cR0-dO-a0u"/>
@@ -117,9 +126,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="01_george_washington" width="225" height="225"/>
-        <image name="02_john_adams" width="225" height="225"/>
-        <image name="03_thomas_jefferson" width="225" height="225"/>
-        <image name="04_james_madison" width="225" height="225"/>
+        <image name="01_george_washington" width="450" height="450"/>
+        <image name="02_john_adams" width="450" height="450"/>
+        <image name="03_thomas_jefferson" width="450" height="450"/>
+        <image name="04_james_madison" width="450" height="451"/>
     </resources>
 </document>
