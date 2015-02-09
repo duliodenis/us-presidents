@@ -409,6 +409,7 @@
 				6CCADFB21A6F3AF200F6BEE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CCADFB31A6F3AF200F6BEE3 /* Build configuration list for PBXNativeTarget "POTUSTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +418,7 @@
 				6CCADFB51A6F3AF200F6BEE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
